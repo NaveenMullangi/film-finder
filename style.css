@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.filters, #recommend-btn, #movie-details {
+  margin: 20px 0;
+}
+
+.filters select, .filters input, .filters button {
+  padding: 5px;
+  font-size: 16px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#loading-spinner {
+  margin: 20px auto;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+#movie-details img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+#saved-movies-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#saved-movies-list li {
+  margin: 5px 0;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Footer styles */
+footer {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #555;
+}
+
+footer p {
+  margin: 0;
+  font-weight: bold;
+}
